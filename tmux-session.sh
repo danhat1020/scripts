@@ -6,16 +6,11 @@ clear
 # sets directories to look in
 DIRS=(
   "$HOME"
-  "$HOME/.config"
-  "$HOME/Documents"
   "$HOME/Documents/projects"
-  "$HOME/Documents/projects/c"
-  "$HOME/Documents/projects/cs"
-  "$HOME/Documents/projects/rust"
 )
 
 # looks at all directories specified using the DIRS array, allows user to fuzzy find
-selected=$(fd --type=dir --max-depth=1 --full-path --hidden --exclude ".git" --exclude ".cache" --exclude ".vim" . "${DIRS[@]}" |
+selected=$(fd --type=dir --max-depth=2 --full-path --hidden --exclude ".git" --exclude ".vim" . "${DIRS[@]}" |
   sed "s|^$HOME/||" |
   sk --color bw --ansi --reverse --prompt="λ ")
 [[ $selected ]] && selected="$HOME/$selected"
