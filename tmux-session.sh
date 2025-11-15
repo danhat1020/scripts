@@ -9,11 +9,11 @@ DIRS=(
   "$HOME/.config"
   "$HOME/Documents"
   "$HOME/Documents/notes"
-  "$HOME/Documents/projects"
-  "$HOME/Documents/projects/c"
-  "$HOME/Documents/projects/cpp"
-  "$HOME/Documents/projects/rust"
-  "$HOME/Documents/projects/c/tutorials"
+  "$HOME/dev/projects"
+  "$HOME/dev/projects/c"
+  "$HOME/dev/projects/cpp"
+  "$HOME/dev/projects/rust"
+  "$HOME/dev/projects/c/tutorials"
 )
 
 # looks at all directories specified using the DIRS array, allows user to fuzzy find
