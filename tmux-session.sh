@@ -10,10 +10,8 @@ DIRS=(
   "$HOME/Documents"
   "$HOME/Documents/notes"
   "$HOME/dev/projects"
-  "$HOME/dev/projects/c"
   "$HOME/dev/projects/cpp"
-  "$HOME/dev/projects/rust"
-  "$HOME/dev/projects/c/tutorials"
+  "$HOME/dev/projects/js"
 )
 
 # looks at all directories specified using the DIRS array, allows user to fuzzy find
